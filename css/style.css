@@ -738,6 +738,64 @@ body{
     z-index: 1;
   }
 }
+/* ===============================
+   FIX MOBILE – HEADER + HERO
+   =============================== */
+
+@media (max-width: 768px) {
+
+  /* Header mais compacto */
+  .header {
+    height: 60px;
+    padding: 0 16px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Logo menor no mobile */
+  .header img {
+    height: 40px;
+    max-width: 100%;
+  }
+
+  /* Texto do logo / nome */
+  .logo-text,
+  .header h1 {
+    font-size: 1.1rem;
+    line-height: 1.2;
+  }
+
+  /* Compensa header fixo */
+  body {
+    padding-top: 60px;
+  }
+
+  /* Hero sem bug de 100vh */
+  .hero,
+  .home,
+  .inicio {
+    min-height: calc(100svh - 60px);
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  /* Centralização correta */
+  .hero-content {
+    text-align: center;
+    padding: 0 16px;
+  }
+
+  /* Título principal */
+  .hero h1 {
+    font-size: 2rem;
+  }
+
+  /* Subtítulo */
+  .hero p {
+    font-size: 1rem;
+  }
+
+}
 
 
 
